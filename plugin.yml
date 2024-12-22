@@ -1,0 +1,16 @@
+name: Pocketmineplugin
+version: 1.0.0
+main: pocketmine\plugin\Pocketmineplugin
+api: 4.0.0
+author: "pocketmineplugin"
+commands:
+  testCommand:
+    description: command
+    usage: /testCommand
+    permission: pocketmineplugin.command.test
+    permission-message: "command"
+    
+permissions:
+  pocketmineplugin.command.test:
+    description: command
+    default: op
